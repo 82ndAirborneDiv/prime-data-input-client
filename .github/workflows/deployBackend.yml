@@ -23,7 +23,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ github.token }}
           repository: cdcgov/prime-data-input-client/base
-          dockerfile: backend/Dockerfile
+          dockerfile: backend/Dockerfile.prod
           add_git_labels: true
           tag_with_sha: true
           tags: latest
