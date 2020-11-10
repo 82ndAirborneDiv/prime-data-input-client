@@ -25,6 +25,7 @@ jobs:
           repository: cdcgov/prime-data-input-client/base
           dockerfile: backend/Dockerfile
           add_git_labels: true
+          tag_with_sha: true
           tags: latest
       - name: Install cloud.gov dependencies
         run: |
