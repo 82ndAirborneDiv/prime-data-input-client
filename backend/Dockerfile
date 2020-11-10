@@ -17,4 +17,4 @@ RUN gradle --no-daemon build
 ENV SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/simple_report
 
 ENTRYPOINT ["gradle", "--info", "--no-daemon"]
-CMD ["tasks"]
+CMD ["bootRun"]
