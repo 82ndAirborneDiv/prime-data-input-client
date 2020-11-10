@@ -41,6 +41,6 @@ jobs:
 
       - name: Deploy to cloud.gov
         env:
-          GIT_USERNAME: ${{ secrets.CF_DOCKER_USERNAME }}
-          GIT_TOKEN: ${{ secrets.CLOUD_GOV_DOCKER_USERNAME }}
+          GIT_USERNAME: ${{ secrets.CLOUD_GOV_DOCKER_USERNAME }}
+          GIT_TOKEN: ${{ secrets.CLOUD_GOV_DOCKER_PASSWORD }}
         run: CF_DOCKER_PASSWORD=$GIT_TOKEN cf push prime-data-input-backend --docker-image docker.pkg.github.com/cdcgov/prime-data-input-client/base:sha-${GITHUB_SHA::7} --docker-username $GIT_USERNAME
