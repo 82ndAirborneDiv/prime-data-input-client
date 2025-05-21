@@ -1,6 +1,6 @@
 # Dockerfile for local development
 
-FROM node:alpine
+FROM node:23.11.1-alpine3.21
 
 # create directory on container
 WORKDIR /frontend/app 
